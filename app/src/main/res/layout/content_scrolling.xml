@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ScrollingActivity"
+    tools:showIn="@layout/activity_scrolling">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_card_margin"
+            android:layout_marginEnd="@dimen/default_card_margin"
+            android:layout_marginStart="@dimen/default_card_margin"
+            android:layout_marginBottom="@dimen/default_card_margin"
+            app:cardElevation="@dimen/default_card_elevation">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/default_text_margin">
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/img_dimension"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/title1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="@id/img1"
+                    app:layout_constraintTop_toBottomOf="@id/img1"
+                    android:text="@string/emilia"
+                    android:layout_marginTop="@dimen/default_text_margin"
+                    android:paddingStart="@dimen/default_card_padding"
+                    android:paddingEnd="@dimen/default_card_padding"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5" />
+
+                <TextView
+                    android:id="@+id/desc1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/title1"
+                    android:paddingStart="@dimen/default_card_padding"
+                    android:paddingEnd="@dimen/default_card_padding"
+                    android:text="@string/emiliaDesc"
+                    android:maxLines="3"
+                    android:ellipsize="end"
+                    />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/desc1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:text="@string/btnText"
+                    android:layout_marginStart="@dimen/default_card_padding"
+                    android:layout_marginEnd="@dimen/default_card_padding"
+                    android:textColor="@color/black"
+                    app:icon="@drawable/ic_link"
+                    app:iconTint="@color/black"
+                    app:iconGravity="textStart"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_card_margin"
+            android:layout_marginEnd="@dimen/default_card_margin"
+            android:layout_marginStart="@dimen/default_card_margin"
+            android:layout_marginBottom="@dimen/default_card_margin"
+            app:cardElevation="@dimen/default_card_elevation">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/default_text_margin">
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/img_dimension"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="@id/img2"
+                    app:layout_constraintTop_toBottomOf="@id/img2"
+                    android:text="@string/duki"
+                    android:layout_marginTop="@dimen/default_text_margin"
+                    android:paddingStart="@dimen/default_card_padding"
+                    android:paddingEnd="@dimen/default_card_padding"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5" />
+
+                <TextView
+                    android:id="@+id/desc2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/title2"
+                    android:paddingStart="@dimen/default_card_padding"
+                    android:paddingEnd="@dimen/default_card_padding"
+                    android:text="@string/dukiDesc"
+                    android:maxLines="3"
+                    android:ellipsize="end"
+                    />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/desc2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:text="@string/btnText"
+                    android:layout_marginStart="@dimen/default_card_padding"
+                    android:layout_marginEnd="@dimen/default_card_padding"
+                    android:textColor="@color/black"
+                    app:icon="@drawable/ic_link"
+                    app:iconTint="@color/black"
+                    app:iconGravity="textStart"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_card_margin"
+            android:layout_marginEnd="@dimen/default_card_margin"
+            android:layout_marginStart="@dimen/default_card_margin"
+            android:layout_marginBottom="@dimen/default_card_margin"
+            app:cardElevation="@dimen/default_card_elevation">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/default_text_margin">
+
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/img_dimension"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/title3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="@id/img3"
+                    app:layout_constraintTop_toBottomOf="@id/img3"
+                    android:text="@string/bzrp"
+                    android:layout_marginTop="@dimen/default_text_margin"
+                    android:paddingStart="@dimen/default_card_padding"
+                    android:paddingEnd="@dimen/default_card_padding"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5" />
+
+                <TextView
+                    android:id="@+id/desc3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/title3"
+                    android:paddingStart="@dimen/default_card_padding"
+                    android:paddingEnd="@dimen/default_card_padding"
+                    android:text="@string/bzrpDesc"
+                    android:maxLines="3"
+                    android:ellipsize="end"
+                    />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/desc3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:text="@string/btnText"
+                    android:layout_marginStart="@dimen/default_card_padding"
+                    android:layout_marginEnd="@dimen/default_card_padding"
+                    android:textColor="@color/black"
+                    app:icon="@drawable/ic_link"
+                    app:iconTint="@color/black"
+                    app:iconGravity="textStart"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_card_margin"
+            android:layout_marginEnd="@dimen/default_card_margin"
+            android:layout_marginStart="@dimen/default_card_margin"
+            android:layout_marginBottom="@dimen/default_card_margin"
+            app:cardElevation="@dimen/default_card_elevation">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/default_text_margin">
+
+                <ImageView
+                    android:id="@+id/img4"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/img_dimension"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/title4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="@id/img4"
+                    app:layout_constraintTop_toBottomOf="@id/img4"
+                    android:text="@string/badbunny"
+                    android:layout_marginTop="@dimen/default_text_margin"
+                    android:paddingStart="@dimen/default_card_padding"
+                    android:paddingEnd="@dimen/default_card_padding"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5" />
+
+                <TextView
+                    android:id="@+id/desc4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/title4"
+                    android:paddingStart="@dimen/default_card_padding"
+                    android:paddingEnd="@dimen/default_card_padding"
+                    android:text="@string/badBunnyDesc"
+                    android:maxLines="3"
+                    android:ellipsize="end"
+                    />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/desc4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:text="@string/btnText"
+                    android:layout_marginStart="@dimen/default_card_padding"
+                    android:layout_marginEnd="@dimen/default_card_padding"
+                    android:textColor="@color/black"
+                    app:icon="@drawable/ic_link"
+                    app:iconTint="@color/black"
+                    app:iconGravity="textStart"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
